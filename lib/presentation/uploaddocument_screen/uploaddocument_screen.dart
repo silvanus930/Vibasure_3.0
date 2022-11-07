@@ -376,6 +376,6 @@ class UploaddocumentScreen extends GetWidget<UploaddocumentController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.selectplanScreen);
+    Get.back();
   }
 }

@@ -189,7 +189,7 @@ class InsuranceclaimFourScreen extends GetWidget<InsuranceclaimFourController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.insuranceclaimThreeScreen);
+    Get.back();
   }
 
   onTapBtnContinue2() {

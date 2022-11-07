@@ -317,7 +317,7 @@ class InsuranceclaimFiveScreen extends GetWidget<InsuranceclaimFiveController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.insuranceclaimFourScreen);
+    Get.back();
   }
 
   onTapBtnOk() {

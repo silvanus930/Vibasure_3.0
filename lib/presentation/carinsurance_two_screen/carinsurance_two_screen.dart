@@ -17,15 +17,15 @@ class CarinsuranceTwoScreen extends GetWidget<CarinsuranceTwoController> {
             body: Container(
                 height: getVerticalSize(856.00),
                 width: size.width,
-                child: Stack(alignment: Alignment.centerLeft, children: [
+                child: Stack(alignment: Alignment.topCenter, children: [
                   Align(
-                      alignment: Alignment.centerLeft,
+                      alignment: Alignment.topCenter,
                       child: CommonImageView(
                           svgPath: ImageConstant.imgBgGray50,
-                          height: getVerticalSize(856.00),
-                          width: getHorizontalSize(375.00))),
+                          height: size.height,
+                          width: size.width)),
                   Align(
-                      alignment: Alignment.centerLeft,
+                      alignment: Alignment.topCenter,
                       child: Column(
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -238,33 +238,6 @@ class CarinsuranceTwoScreen extends GetWidget<CarinsuranceTwoController> {
                                                                           return ListbgOneItemWidget(
                                                                               model);
                                                                         }))),
-                                                            // SingleChildScrollView(
-                                                            //     scrollDirection:
-                                                            //         Axis
-                                                            //             .horizontal,
-                                                            //     child:
-                                                            //         Container(
-                                                            //             height: getVerticalSize(
-                                                            //                 86.00),
-                                                            //             width: getHorizontalSize(
-                                                            //                 98.00),
-                                                            //             child: Stack(
-                                                            //                 alignment:
-                                                            //                     Alignment.topRight,
-                                                            //                 children: [
-                                                            //                   Align(
-                                                            //                       alignment: Alignment.centerLeft,
-                                                            //                       child: Container(
-                                                            //                           height: getVerticalSize(86.00),
-                                                            //                           width: getHorizontalSize(82.00),
-                                                            //                           margin: getMargin(right: 10),
-                                                            //                           child: Stack(alignment: Alignment.bottomLeft, children: [
-                                                            //                             Align(alignment: Alignment.centerLeft, child: ClipRRect(borderRadius: BorderRadius.circular(getHorizontalSize(5.00)), child: CommonImageView(svgPath: ImageConstant.imgBg, height: getVerticalSize(86.00), width: getHorizontalSize(82.00), fit: BoxFit.cover))),
-                                                            //                             Align(alignment: Alignment.bottomLeft, child: Padding(padding: getPadding(left: 12, top: 10, right: 12, bottom: 9), child: Text("lbl_other".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtArialMT11)))
-                                                            //                           ]))),
-                                                            //                   Align(alignment: Alignment.topRight, child: Padding(padding: getPadding(left: 10, top: 12, bottom: 12), child: CommonImageView(imagePath: ImageConstant.imgCar49X80, height: getVerticalSize(49.00), width: getHorizontalSize(80.00))))
-                                                            //                 ])))
-                                                         
                                                           ]))),
                                               CustomDropDown(
                                                   width: 283,
@@ -277,9 +250,9 @@ class CarinsuranceTwoScreen extends GetWidget<CarinsuranceTwoController> {
                                                               .imgIconionicmdarrowdropdown)),
                                                   hintText: "lbl_model".tr,
                                                   margin: getMargin(
-                                                      left: 27,
-                                                      top: 25,
-                                                      right: 27),
+                                                      left: 20,
+                                                      top: 10,
+                                                      right: 20),
                                                   alignment:
                                                       Alignment.centerLeft,
                                                   items: controller
@@ -301,45 +274,43 @@ class CarinsuranceTwoScreen extends GetWidget<CarinsuranceTwoController> {
                                                               .imgIconionicmdarrowdropdown)),
                                                   hintText: "lbl_make".tr,
                                                   margin: getMargin(
-                                                      left: 28,
-                                                      top: 17,
-                                                      right: 28),
-                                                  padding: DropDownPadding
-                                                      .PaddingAll9,
+                                                      left: 20,
+                                                      top: 10,
+                                                      right: 20),
                                                   alignment:
                                                       Alignment.centerLeft,
                                                   items: controller
                                                       .carinsuranceTwoModelObj
                                                       .value
-                                                      .dropdownItemList1,
+                                                      .dropdownItemList,
                                                   onChanged: (value) {
                                                     controller
-                                                        .onSelected1(value);
+                                                        .onSelected(value);
                                                   }),
                                               CustomDropDown(
-                                                  width: 298,
+                                                  width: 283,
                                                   focusNode: FocusNode(),
                                                   icon: Container(
                                                       margin: getMargin(
-                                                          left: 30, right: 14),
+                                                          left: 30, right: 13),
                                                       child: CommonImageView(
                                                           svgPath: ImageConstant
                                                               .imgIconionicmdarrowdropdown)),
                                                   hintText:
                                                       "lbl_number_of_seats".tr,
                                                   margin: getMargin(
-                                                      left: 27,
-                                                      top: 1,
-                                                      right: 27),
+                                                      left: 20,
+                                                      top: 10,
+                                                      right: 20),
                                                   alignment:
                                                       Alignment.centerLeft,
                                                   items: controller
                                                       .carinsuranceTwoModelObj
                                                       .value
-                                                      .dropdownItemList2,
+                                                      .dropdownItemList,
                                                   onChanged: (value) {
                                                     controller
-                                                        .onSelected2(value);
+                                                        .onSelected(value);
                                                   }),
                                               Align(
                                                   alignment:
@@ -381,35 +352,7 @@ class CarinsuranceTwoScreen extends GetWidget<CarinsuranceTwoController> {
                                                                         113.00),
                                                                 width:
                                                                     getHorizontalSize(
-                                                                        99.00),
-                                                                child: Stack(
-                                                                    alignment:
-                                                                        Alignment
-                                                                            .centerLeft,
-                                                                    children: [
-                                                                      Align(
-                                                                          alignment: Alignment
-                                                                              .centerLeft,
-                                                                          child: ClipRRect(
-                                                                              borderRadius: BorderRadius.circular(getHorizontalSize(5.00)),
-                                                                              child: CommonImageView(svgPath: ImageConstant.imgBg5, height: getVerticalSize(113.00), width: getHorizontalSize(99.00), fit: BoxFit.cover))),
-                                                                      Align(
-                                                                          alignment:
-                                                                              Alignment.centerLeft,
-                                                                          child: Padding(
-                                                                              padding: getPadding(all: 13),
-                                                                              child: Column(mainAxisSize: MainAxisSize.min, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                                Align(alignment: Alignment.centerRight, child: Padding(padding: getPadding(left: 7), child: CommonImageView(svgPath: ImageConstant.imgClose, height: getVerticalSize(62.00), width: getHorizontalSize(58.00)))),
-                                                                                Align(alignment: Alignment.centerLeft, child: Padding(padding: getPadding(top: 10, right: 8), child: Text("lbl_third_party".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtArialMT12)))
-                                                                              ])))
-                                                                    ])),
-                                                            Container(
-                                                                height:
-                                                                    getVerticalSize(
-                                                                        113.00),
-                                                                width:
-                                                                    getHorizontalSize(
-                                                                        207.00),
+                                                                        300.00),
                                                                 child: Obx(() => ListView
                                                                     .builder(
                                                                         padding: getPadding(
@@ -440,7 +383,7 @@ class CarinsuranceTwoScreen extends GetWidget<CarinsuranceTwoController> {
                                                       Alignment.centerLeft,
                                                   child: Container(
                                                       height: getVerticalSize(
-                                                          18.00),
+                                                          25.00),
                                                       width: getHorizontalSize(
                                                           157.00),
                                                       margin: getMargin(
@@ -458,7 +401,7 @@ class CarinsuranceTwoScreen extends GetWidget<CarinsuranceTwoController> {
                                                                     padding:
                                                                         getPadding(
                                                                             top:
-                                                                                10),
+                                                                                1),
                                                                     child: CommonImageView(
                                                                         imagePath:
                                                                             ImageConstant
@@ -668,7 +611,7 @@ class CarinsuranceTwoScreen extends GetWidget<CarinsuranceTwoController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.carinsuranceOneScreen);
+    Get.back();
   }
 
   onTapBtnContinue() {

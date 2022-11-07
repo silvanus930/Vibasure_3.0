@@ -346,7 +346,7 @@ class ChooseinsuranceScreen extends GetWidget<ChooseinsuranceController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.carinsuranceTwoScreen);
+    Get.back();
   }
 
   onTapBtnInsurenow() {

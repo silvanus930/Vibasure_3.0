@@ -224,7 +224,7 @@ class PaymentTwoScreen extends GetWidget<PaymentTwoController> {
                                                                         child: CommonImageView(
                                                                             svgPath:
                                                                                 ImageConstant.imgBgWhiteA700,
-                                                                            height: getVerticalSize(225.00),
+                                                                            height: getVerticalSize(325.00),
                                                                             width: getHorizontalSize(335.00),
                                                                             fit: BoxFit.cover))),
                                                                 Align(
@@ -232,7 +232,7 @@ class PaymentTwoScreen extends GetWidget<PaymentTwoController> {
                                                                         Alignment
                                                                             .center,
                                                                     child: Padding(
-                                                                        padding: getPadding(left: 15, top: 16, right: 21, bottom: 23),
+                                                                        padding: getPadding(left: 15, top: 1, right: 21, bottom: 1),
                                                                         child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start, children: [
                                                                           Align(
                                                                               alignment: Alignment.center,
@@ -281,12 +281,12 @@ class PaymentTwoScreen extends GetWidget<PaymentTwoController> {
                                                                                               child: Container(
                                                                                                   decoration: AppDecoration.fillWhiteA70067.copyWith(borderRadius: BorderRadiusStyle.roundedBorder5),
                                                                                                   child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.center, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                                                    Container(height: getVerticalSize(39.00), width: getHorizontalSize(149.00), margin: getMargin(all: 1), decoration: BoxDecoration(borderRadius: BorderRadius.circular(getHorizontalSize(4.50)), border: Border.all(color: ColorConstant.gray600, width: getHorizontalSize(1.00))))
+                                                                                                    Container(height: getVerticalSize(35.00), width: getHorizontalSize(149.00), margin: getMargin(all: 1), decoration: BoxDecoration(borderRadius: BorderRadius.circular(getHorizontalSize(4.50)), border: Border.all(color: ColorConstant.gray600, width: getHorizontalSize(1.00))))
                                                                                                   ]))),
                                                                                           Align(alignment: Alignment.centerLeft, child: Padding(padding: getPadding(left: 15, top: 12, right: 15, bottom: 12), child: Text("lbl_dd_mm_yyyy".tr, overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoMedium14Bluegray900)))
                                                                                         ])),
                                                                                     Container(
-                                                                                        height: getVerticalSize(40.00),
+                                                                                        height: getVerticalSize(38.00),
                                                                                         width: getHorizontalSize(138.00),
                                                                                         child: Stack(alignment: Alignment.centerLeft, children: [
                                                                                           Align(alignment: Alignment.centerLeft, child: CommonImageView(svgPath: ImageConstant.imgRectangle90, height: getVerticalSize(40.00), width: getHorizontalSize(138.00))),

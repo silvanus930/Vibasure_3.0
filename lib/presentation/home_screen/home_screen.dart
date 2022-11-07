@@ -166,59 +166,67 @@ class HomeScreen extends GetWidget<HomeController> {
                                                                     style: AppStyle
                                                                         .txtArialMT16))
                                                           ]))),
-                                              Container(
-                                                  decoration: AppDecoration
-                                                      .fillWhiteA700
-                                                      .copyWith(
-                                                          borderRadius:
-                                                              BorderRadiusStyle
-                                                                  .roundedBorder5),
-                                                  child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.min,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .center,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Padding(
-                                                            padding: getPadding(
-                                                                left: 23,
-                                                                top: 19,
-                                                                right: 23),
-                                                            child: InkWell(
-                                                                onTap: () {
-                                                                  onTapImgGoogle();
-                                                                },
-                                                                child: CommonImageView(
-                                                                    svgPath:
-                                                                        ImageConstant
-                                                                            .imgGoogle94X94,
-                                                                    height:
-                                                                        getSize(
-                                                                            94.00),
-                                                                    width: getSize(
-                                                                        94.00)))),
-                                                        Padding(
-                                                            padding: getPadding(
-                                                                left: 23,
-                                                                top: 17,
-                                                                right: 22,
-                                                                bottom: 21),
-                                                            child: Text(
-                                                                "lbl_insurance_claim"
-                                                                    .tr,
-                                                                overflow:
-                                                                    TextOverflow
-                                                                        .ellipsis,
-                                                                textAlign:
-                                                                    TextAlign
-                                                                        .left,
-                                                                style: AppStyle
-                                                                    .txtRobotoRomanRegular16))
-                                                      ]))
+                                              GestureDetector(
+                                                onTap: () {
+                                                  onTapInsuranceCalm();
+                                                },
+                                                child: Container(
+                                                    decoration: AppDecoration
+                                                        .fillWhiteA700
+                                                        .copyWith(
+                                                            borderRadius:
+                                                                BorderRadiusStyle
+                                                                    .roundedBorder5),
+                                                    child: Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.min,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .center,
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 23,
+                                                                      top: 19,
+                                                                      right:
+                                                                          23),
+                                                              child: InkWell(
+                                                                  onTap: () {
+                                                                    onTapInsuranceCalm();
+                                                                  },
+                                                                  child: CommonImageView(
+                                                                      svgPath:
+                                                                          ImageConstant
+                                                                              .imgGoogle94X94,
+                                                                      height: getSize(
+                                                                          94.00),
+                                                                      width: getSize(
+                                                                          94.00)))),
+                                                          Padding(
+                                                              padding:
+                                                                  getPadding(
+                                                                      left: 23,
+                                                                      top: 17,
+                                                                      right: 22,
+                                                                      bottom:
+                                                                          21),
+                                                              child: Text(
+                                                                  "lbl_insurance_claim"
+                                                                      .tr,
+                                                                  overflow:
+                                                                      TextOverflow
+                                                                          .ellipsis,
+                                                                  textAlign:
+                                                                      TextAlign
+                                                                          .left,
+                                                                  style: AppStyle
+                                                                      .txtRobotoRomanRegular16))
+                                                        ])),
+                                              ),
                                             ])),
                                     Container(
                                         height: getVerticalSize(85.00),
@@ -379,6 +387,10 @@ class HomeScreen extends GetWidget<HomeController> {
 
   onTapPolicyEnquiry() {
     Get.toNamed(AppRoutes.policyenquiryScreen);
+  }
+
+  onTapInsuranceCalm() {
+    Get.toNamed(AppRoutes.insuranceclaimScreen);
   }
 
   onTapImgGoogle() async {}

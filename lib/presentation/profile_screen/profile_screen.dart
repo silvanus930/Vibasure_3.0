@@ -17,12 +17,12 @@ class ProfileScreen extends GetWidget<ProfileController> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                       Align(
-                          alignment: Alignment.center,
+                          alignment: Alignment.topCenter,
                           child: Container(
                               height: getVerticalSize(782.00),
                               width: size.width,
                               child: Stack(
-                                  alignment: Alignment.center,
+                                  alignment: Alignment.topCenter,
                                   children: [
                                     Align(
                                         alignment: Alignment.center,
@@ -31,7 +31,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                             height: getVerticalSize(782.00),
                                             width: getHorizontalSize(375.00))),
                                     Align(
-                                        alignment: Alignment.center,
+                                        alignment: Alignment.topCenter,
                                         child: Padding(
                                             padding: getPadding(bottom: 10),
                                             child: Column(
@@ -43,7 +43,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                 children: [
                                                   Align(
                                                       alignment:
-                                                          Alignment.center,
+                                                          Alignment.topCenter,
                                                       child: Container(
                                                           width: size.width,
                                                           child: Container(
@@ -165,7 +165,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                               MainAxisAlignment
                                                                   .center,
                                                           children: [
-                                                            GestureDetector(
+                                                            InkWell(
                                                                 onTap: () {
                                                                   onTapProfile();
                                                                 },

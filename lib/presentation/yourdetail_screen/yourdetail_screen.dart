@@ -245,12 +245,7 @@ class YourdetailScreen extends GetWidget<YourdetailController> {
     Get.back();
   }
 
-  onTapImgCamera() async {
-    await PermissionManager.askForPermission(Permission.camera);
-    await PermissionManager.askForPermission(Permission.storage);
-    List<String?>? imageList = [];
-//TODO: Permission - use imageList for using selected images
-  }
+  onTapImgCamera() async {}
 
   onTapBtnSignup() {
     Get.toNamed(AppRoutes.homeScreen);

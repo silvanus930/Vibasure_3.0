@@ -363,7 +363,7 @@ class InsuranceclaimTwoScreen extends GetWidget<InsuranceclaimTwoController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.insuranceclaimOneScreen);
+    Get.back();
   }
 
   Future<void> onTapRowenterpolicyty() async {

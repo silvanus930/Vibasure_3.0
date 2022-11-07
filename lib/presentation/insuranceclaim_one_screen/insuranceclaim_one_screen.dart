@@ -420,6 +420,6 @@ class InsuranceclaimOneScreen extends GetWidget<InsuranceclaimOneController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.insuranceclaimOneOneScreen);
+    Get.back();
   }
 }

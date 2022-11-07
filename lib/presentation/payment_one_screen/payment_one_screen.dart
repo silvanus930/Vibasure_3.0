@@ -267,7 +267,7 @@ class PaymentOneScreen extends GetWidget<PaymentOneController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.settingScreen);
+    Get.back();
   }
 
   onTapBtnProcesstochec() {

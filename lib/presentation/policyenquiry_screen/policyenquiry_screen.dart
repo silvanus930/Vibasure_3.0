@@ -185,7 +185,7 @@ class PolicyenquiryScreen extends GetWidget<PolicyenquiryController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.singleInsuranceScreen);
+    Get.back();
   }
 
   onTapBtnContinue2() {

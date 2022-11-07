@@ -142,10 +142,10 @@ class InsuranceclaimScreen extends GetWidget<InsuranceclaimController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.homeScreen);
+    Get.back();
   }
 
   onTapBtnContinue() {
-    Get.toNamed(AppRoutes.insuranceclaimOneOneScreen);
+    Get.toNamed(AppRoutes.insuranceclaimOneScreen);
   }
 }

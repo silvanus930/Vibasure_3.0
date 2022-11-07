@@ -142,8 +142,6 @@ class InsurancepolicyScreen extends GetWidget<InsurancepolicyController> {
                                                                         Alignment
                                                                             .center,
                                                                     child: Container(
-                                                                        height: getVerticalSize(21.00),
-                                                                        width: getHorizontalSize(193.00),
                                                                         margin: getMargin(right: 5),
                                                                         child: Stack(alignment: Alignment.center, children: [
                                                                           Align(
@@ -196,8 +194,6 @@ class InsurancepolicyScreen extends GetWidget<InsurancepolicyController> {
                                                               ])))
                                                 ])),
                                         Container(
-                                            height: getVerticalSize(177.00),
-                                            width: getHorizontalSize(335.00),
                                             margin: getMargin(
                                                 left: 20,
                                                 top: 32,
@@ -269,23 +265,19 @@ class InsurancepolicyScreen extends GetWidget<InsurancepolicyController> {
                                                                               "lbl_benefits".tr,
                                                                               overflow: TextOverflow.ellipsis,
                                                                               textAlign: TextAlign.left,
-                                                                              style: AppStyle.txtRobotoMedium15))
+                                                                              style: AppStyle.txtRobotoMedium15)),
+                                                                      SizedBox(
+                                                                        width:
+                                                                            100,
+                                                                      ),
+                                                                      Positioned(
+                                                                          right:
+                                                                              5,
+                                                                          child: CommonImageView(
+                                                                              svgPath: ImageConstant.imgArrowrightBluegray9008X5,
+                                                                              height: getVerticalSize(8.00),
+                                                                              width: getHorizontalSize(5.00)))
                                                                     ]),
-                                                                Padding(
-                                                                    padding: getPadding(
-                                                                        left:
-                                                                            185,
-                                                                        top: 14,
-                                                                        bottom:
-                                                                            14),
-                                                                    child: CommonImageView(
-                                                                        svgPath:
-                                                                            ImageConstant
-                                                                                .imgArrowrightBluegray9008X5,
-                                                                        height: getVerticalSize(
-                                                                            8.00),
-                                                                        width: getHorizontalSize(
-                                                                            5.00)))
                                                               ])))
                                                 ]))
                                       ]))

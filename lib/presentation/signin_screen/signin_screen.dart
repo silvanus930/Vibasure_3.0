@@ -329,6 +329,6 @@ class SigninScreen extends GetWidget<SigninController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.onboardingOneScreen);
+    Get.back();
   }
 }

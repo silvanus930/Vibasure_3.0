@@ -373,7 +373,7 @@ class SelectplanScreen extends GetWidget<SelectplanController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.chooseinsuranceScreen);
+    Get.back();
   }
 
   onTapTxtBuynow() {

@@ -389,6 +389,6 @@ class SingleInsuranceScreen extends GetWidget<SingleInsuranceController> {
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.homeMyinsuranceScreen);
+    Get.back();
   }
 }

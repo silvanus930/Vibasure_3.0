@@ -5,7 +5,10 @@ import 'listbg_five_item_model.dart';
 
 class CarinsuranceTwoModel {
   RxList<ListbgOneItemModel> listbgOneItemList =
-      RxList.filled(5, ListbgOneItemModel());
+      RxList.filled(6, ListbgOneItemModel());
+
+  RxList<ListbgFiveItemModel> listbgFiveItemList =
+      RxList.filled(3, ListbgFiveItemModel());
 
   RxList<SelectionPopupModel> dropdownItemList = [
     SelectionPopupModel(
@@ -54,7 +57,4 @@ class CarinsuranceTwoModel {
       title: "test2",
     )
   ].obs;
-
-  RxList<ListbgFiveItemModel> listbgFiveItemList =
-      RxList.filled(2, ListbgFiveItemModel());
 }

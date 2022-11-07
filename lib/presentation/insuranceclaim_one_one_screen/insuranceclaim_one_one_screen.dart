@@ -376,6 +376,6 @@ class InsuranceclaimOneOneScreen
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.insuranceclaimScreen);
+    Get.back();
   }
 }

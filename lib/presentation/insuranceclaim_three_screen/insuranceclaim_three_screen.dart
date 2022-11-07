@@ -359,86 +359,42 @@ class InsuranceclaimThreeScreen
                                             }),
                                         Align(
                                             alignment: Alignment.centerLeft,
-                                            child: Container(
-                                                height: getVerticalSize(66.00),
-                                                width:
-                                                    getHorizontalSize(268.00),
+                                            child: Padding(
+                                                padding: getPadding(
+                                                    left: 48,
+                                                    top: 12,
+                                                    right: 48),
+                                                child: Text(
+                                                    "lbl_property_type".tr,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                    textAlign: TextAlign.left,
+                                                    style: AppStyle
+                                                        .txtArialMT16Gray900))),
+                                        CustomDropDown(
+                                            width: 295,
+                                            focusNode: FocusNode(),
+                                            icon: Container(
                                                 margin: getMargin(
-                                                    left: 23,
-                                                    top: 26,
-                                                    right: 23),
-                                                child: Stack(
-                                                    alignment:
-                                                        Alignment.bottomLeft,
-                                                    children: [
-                                                      Align(
-                                                          alignment:
-                                                              Alignment.topLeft,
-                                                          child: Container(
-                                                              width:
-                                                                  getHorizontalSize(
-                                                                      61.00),
-                                                              margin: getMargin(
-                                                                  left: 8,
-                                                                  right: 10,
-                                                                  bottom: 10),
-                                                              child: Text(
-                                                                  "lbl_property_type"
-                                                                      .tr,
-                                                                  maxLines:
-                                                                      null,
-                                                                  textAlign:
-                                                                      TextAlign
-                                                                          .left,
-                                                                  style: AppStyle
-                                                                      .txtArialMT16Gray900))),
-                                                      Align(
-                                                          alignment: Alignment
-                                                              .bottomLeft,
-                                                          child: Container(
-                                                              height:
-                                                                  getVerticalSize(
-                                                                      45.00),
-                                                              width:
-                                                                  getHorizontalSize(
-                                                                      268.00),
-                                                              margin: getMargin(
-                                                                  top: 10),
-                                                              child: Stack(
-                                                                  alignment:
-                                                                      Alignment
-                                                                          .bottomLeft,
-                                                                  children: [
-                                                                    Align(
-                                                                        alignment:
-                                                                            Alignment.centerLeft,
-                                                                        child: Card(
-                                                                            clipBehavior: Clip.antiAlias,
-                                                                            elevation: 0,
-                                                                            margin: getMargin(bottom: 1),
-                                                                            color: ColorConstant.gray100,
-                                                                            shape: RoundedRectangleBorder(borderRadius: BorderRadiusStyle.circleBorder21),
-                                                                            child: Container(
-                                                                                height: getVerticalSize(43.00),
-                                                                                width: getHorizontalSize(268.00),
-                                                                                decoration: AppDecoration.fillGray100.copyWith(borderRadius: BorderRadiusStyle.circleBorder21),
-                                                                                child: Stack(children: [
-                                                                                  Align(alignment: Alignment.bottomRight, child: Padding(padding: getPadding(left: 14, top: 16, right: 14, bottom: 16), child: CommonImageView(svgPath: ImageConstant.imgIconionicmdarrowdropdown, height: getVerticalSize(6.00), width: getHorizontalSize(14.00))))
-                                                                                ])))),
-                                                                    Align(
-                                                                        alignment:
-                                                                            Alignment
-                                                                                .bottomLeft,
-                                                                        child: Container(
-                                                                            width: getHorizontalSize(
-                                                                                31.00),
-                                                                            margin: getMargin(
-                                                                                left: 14,
-                                                                                top: 10,
-                                                                                right: 14),
-                                                                            child: Text("lbl_vehicle".tr, maxLines: null, textAlign: TextAlign.left, style: AppStyle.txtArialMT16Gray900)))
-                                                                  ])))
-                                                    ]))),
+                                                    left: 30, right: 16),
+                                                child: CommonImageView(
+                                                    svgPath: ImageConstant
+                                                        .imgIconionicmdarrowdropdown)),
+                                            hintText: "lbl_vehicle".tr,
+                                            margin: getMargin(
+                                                left: 17, top: 2, right: 17),
+                                            shape:
+                                                DropDownShape.RoundedBorder21,
+                                            fontStyle:
+                                                DropDownFontStyle.ArialMT16,
+                                            alignment: Alignment.center,
+                                            items: controller
+                                                .insuranceclaimThreeModelObj
+                                                .value
+                                                .dropdownItemList,
+                                            onChanged: (value) {
+                                              controller.onSelected(value);
+                                            }),
                                         CustomTextFormField(
                                             width: 313,
                                             focusNode: FocusNode(),
@@ -446,7 +402,7 @@ class InsuranceclaimThreeScreen
                                                 .groupFortySixController,
                                             hintText: "msg_vehicle_registr2".tr,
                                             margin: getMargin(
-                                                left: 17, top: 2, right: 17),
+                                                left: 17, top: 10, right: 17),
                                             alignment: Alignment.center),
                                         CustomTextFormField(
                                             width: 313,
@@ -567,6 +523,6 @@ class InsuranceclaimThreeScreen
   }
 
   onTapImgArrowleft() {
-    Get.toNamed(AppRoutes.insuranceclaimTwoScreen);
+    Get.back();
   }
 }
