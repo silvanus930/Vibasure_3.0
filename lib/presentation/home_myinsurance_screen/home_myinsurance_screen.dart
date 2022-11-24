@@ -23,14 +23,6 @@ class HomeMyinsuranceScreen extends GetWidget<HomeMyinsuranceController> {
                       child: Container(
                           child: Stack(alignment: Alignment.topLeft, children: [
                         Align(
-                            alignment: Alignment.center,
-                            child: CommonImageView(
-                                svgPath: ImageConstant.imgBgGray50,
-                                height:
-                                    MediaQuery.of(context).size.height * 0.4,
-                                width:
-                                    MediaQuery.of(context).size.height * 0.4)),
-                        Align(
                             alignment: Alignment.topLeft,
                             child: Padding(
                                 padding: getPadding(right: 1, bottom: 3),
@@ -48,19 +40,6 @@ class HomeMyinsuranceScreen extends GetWidget<HomeMyinsuranceController> {
                                                       alignment:
                                                           Alignment.bottomLeft,
                                                       children: [
-                                                        Align(
-                                                            alignment: Alignment
-                                                                .centerLeft,
-                                                            child: CommonImageView(
-                                                                svgPath:
-                                                                    ImageConstant
-                                                                        .imgBg7,
-                                                                height:
-                                                                    getVerticalSize(
-                                                                        71.00),
-                                                                width:
-                                                                    getHorizontalSize(
-                                                                        374.00))),
                                                         Align(
                                                             alignment: Alignment
                                                                 .bottomLeft,
@@ -108,27 +87,6 @@ class HomeMyinsuranceScreen extends GetWidget<HomeMyinsuranceController> {
                                               child: Stack(
                                                   alignment: Alignment.center,
                                                   children: [
-                                                // Align(
-                                                //     alignment:
-                                                //         Alignment.center,
-                                                //     child: ClipRRect(
-                                                //         borderRadius:
-                                                //             BorderRadius.circular(
-                                                //                 getHorizontalSize(
-                                                //                     10.00)),
-                                                //         child: CommonImageView(
-                                                //             svgPath:
-                                                //                 ImageConstant
-                                                //                     .imgBgWhiteA700,
-                                                //             height:
-                                                //                 getVerticalSize(
-                                                //                     422.00),
-                                                //             width:
-                                                //                 size.width -
-                                                //                     50,
-                                                //             fit: BoxFit
-                                                //                 .cover))),
-
                                                 Align(
                                                     alignment: Alignment.center,
                                                     child: Padding(
@@ -148,16 +106,16 @@ class HomeMyinsuranceScreen extends GetWidget<HomeMyinsuranceController> {
                                                               Align(
                                                                   alignment:
                                                                       Alignment
-                                                                          .centerRight,
+                                                                          .center,
                                                                   child: Padding(
                                                                       padding: getPadding(
                                                                           left:
                                                                               10),
                                                                       child: CommonImageView(
-                                                                          svgPath: ImageConstant
-                                                                              .imgImage189X266,
+                                                                          imagePath: ImageConstant
+                                                                              .imgslide2,
                                                                           height: getVerticalSize(
-                                                                              189.00),
+                                                                              229.00),
                                                                           width:
                                                                               getHorizontalSize(266.00)))),
                                                               Align(

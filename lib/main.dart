@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:vibasure_insurance_3/presentation/signin_screen/binding/signin_binding.dart';
 import 'package:vibasure_insurance_3/presentation/splash.dart';
 
 import 'core/app_export.dart';
@@ -15,9 +16,9 @@ void main() {
 //     DeviceOrientation.portraitUp,
 //   ]).then((value) {
 //     Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
-//     runApp(MyApp());
+//     runApp(MyApp1());
 //   });
-//}
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -39,7 +40,7 @@ class MyApp1 extends StatelessWidget {
       locale: Get.deviceLocale,
       fallbackLocale: Locale('en', 'US'),
       title: 'vibasure_insurance_3',
-      initialBinding: InitialBindings(),
+      initialBinding: SigninBinding(),
       initialRoute: AppRoutes.signinScreen,
       getPages: AppRoutes.pages,
     );

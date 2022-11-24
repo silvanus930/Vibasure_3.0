@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vibasure_insurance_3/core/app_export.dart';
 import 'package:vibasure_insurance_3/main.dart';
 import 'package:vibasure_insurance_3/presentation/signin_screen/signin_screen.dart';
 import 'package:vibasure_insurance_3/widgets/common_widget.dart';
@@ -43,6 +44,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
 
   void _signUpClick() {
     _animationController?.animateTo(0.2);
+    //Get.toNamed(AppRoutes.signinScreen);
     Navigator.push<dynamic>(
       context,
       MaterialPageRoute<dynamic>(
@@ -114,7 +116,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                         Positioned(
                           left: 0,
                           right: 0,
-                          bottom: getVerticalSize(60),
+                          bottom: 60,
                           child: Center(
                               child: AnimatedBuilder(
                             animation: _animationController!,
@@ -129,7 +131,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen>
                           )),
                         ),
                         Positioned(
-                          bottom: getVerticalSize(20),
+                          bottom: 20,
                           right: 0,
                           left: 0,
                           child: Center(
@@ -241,7 +243,7 @@ class SecondView1 extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: AppTheme.fontName,
                               fontWeight: FontWeight.normal,
-                              fontSize: getFontSize(20),
+                              fontSize: 25,
                               letterSpacing: 0.0,
                               color: AppTheme.white,
                             ),
@@ -257,7 +259,7 @@ class SecondView1 extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: AppTheme.fontName,
                               fontWeight: FontWeight.normal,
-                              fontSize: getFontSize(14),
+                              fontSize: 20,
                               letterSpacing: 0.0,
                               color: AppTheme.white,
                             ),
@@ -358,7 +360,7 @@ class SecondView2 extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: AppTheme.fontName,
                               fontWeight: FontWeight.normal,
-                              fontSize: getFontSize(20),
+                              fontSize: 25,
                               letterSpacing: 0.0,
                               color: AppTheme.white,
                             ),
@@ -374,7 +376,7 @@ class SecondView2 extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: AppTheme.fontName,
                               fontWeight: FontWeight.normal,
-                              fontSize: getFontSize(14),
+                              fontSize: 20,
                               letterSpacing: 0.0,
                               color: AppTheme.white,
                             ),

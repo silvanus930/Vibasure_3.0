@@ -16,6 +16,9 @@ class ImageConstant {
 
   static String imgImage315X373 = 'assets/images/img_image_315X373.svg';
 
+  static String imgslide1 = 'assets/images/slide_1.png';
+  static String imgslide2 = 'assets/images/slide_2.png';
+
   static String imgpayment1 = 'assets/images/payment1.png';
   static String imgpayment2 = 'assets/images/payment2.png';
   static String imgpayment3 = 'assets/images/payment3.png';

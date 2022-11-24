@@ -53,8 +53,8 @@ class HomeScreen extends GetWidget<HomeController> {
                                                                   getHorizontalSize(
                                                                       375.00))),
                                                       Align(
-                                                          alignment: Alignment
-                                                              .bottomCenter,
+                                                          alignment:
+                                                              Alignment.center,
                                                           child: Text(
                                                               "lbl_home".tr,
                                                               overflow:

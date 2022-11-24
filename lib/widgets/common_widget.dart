@@ -8,7 +8,7 @@ class CommonWidgets {
       alignment: Alignment.topCenter,
       child: Container(
         width: MediaQuery.of(context).size.width,
-        height: getVerticalSize(50),
+        height: 50,
         decoration: const BoxDecoration(
           color: AppTheme.white,
           borderRadius: BorderRadius.only(
@@ -22,8 +22,8 @@ class CommonWidgets {
                   Navigator.pop(context);
                 },
                 child: SizedBox(
-                  width: getHorizontalSize(60),
-                  height: getVerticalSize(60),
+                  width: 60,
+                  height: 60,
                   child: Icon(Icons.arrow_back, color: AppTheme.darkText),
                 )),
             Expanded(
@@ -44,8 +44,8 @@ class CommonWidgets {
 
   static Widget getAppButton(String buttontitle, VoidCallback action) {
     return MaterialButton(
-      minWidth: getHorizontalSize(200),
-      height: getVerticalSize(45),
+      minWidth: 250,
+      height: 50,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
         //side: BorderSide(color: Colors.white),
@@ -57,7 +57,28 @@ class CommonWidgets {
         buttontitle,
         style: TextStyle(
           color: Colors.white,
-          fontSize: getFontSize(16),
+          fontSize: 20,
+        ),
+      ),
+    );
+  }
+
+  static Widget getAppButton2(String buttontitle, double width, double height,
+      double textsize, VoidCallback action) {
+    return MaterialButton(
+      minWidth: width,
+      height: height,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(30),
+      ),
+      elevation: 8,
+      color: AppTheme.buttonColor,
+      onPressed: action,
+      child: Text(
+        buttontitle,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: textsize,
         ),
       ),
     );
