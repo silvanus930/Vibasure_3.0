@@ -47,5 +47,7 @@
     <string>Microphone</string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>App would like to access your photo gallery</string>
-  </dict>
+  	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+</dict>
 </plist>
